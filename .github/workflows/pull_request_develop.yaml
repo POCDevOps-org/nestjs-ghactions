@@ -7,4 +7,4 @@ on:
 
 jobs:
   develop:
-    uses: ./.github/workflow-templates/workflow-template.yml
+    uses: "POCDevOps-org/gh-templates/./.github/workflows/workflow-template.yml@main"
