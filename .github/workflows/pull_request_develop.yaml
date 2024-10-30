@@ -1,12 +1,11 @@
-name: Pull Request - Develop
+name: develop
 
 on:
-  pull_request:
-    branches: 
+  workflow_dispatch:
+  push:
+    branches:
       - develop
 
 jobs:
   develop:
     uses: POCDevOps-org/gh-templates/.github/workflows/workflow-template.yml@main
-
-    
