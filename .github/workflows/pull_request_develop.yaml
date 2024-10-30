@@ -1,26 +1,12 @@
-name: PR - Develop
-
+name: Pull Request - Develop
 
 on:
   pull_request:
-    branches:
+    branches: 
       - develop
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  develop:
+    uses: POCDevOps-org/gh-templates/.github/workflows/workflow-template.yml@main
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build project
-        run: npm run build
+    
