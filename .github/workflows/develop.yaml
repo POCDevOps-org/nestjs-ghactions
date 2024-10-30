@@ -9,5 +9,3 @@ on:
 jobs:
   develop:
     uses: POCDevOps-org/gh-templates/.github/workflows/workflow-template.yml@main
-
-    
